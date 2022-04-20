@@ -30,6 +30,10 @@ public class PostService {
 	public List<Post> findByTitle(String text){
 		return repo.findByTitleContainingIgnoreCase(text);
 	}
+	
+	public List<Post> findByTileWithQueryMongoDB(String text){
+		return repo.searchTilte(text);
+	}
 		
 	
 	
